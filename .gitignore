@@ -1,0 +1,4 @@
+node_modules/
+.expo/
+native-base-theme/
+npm-debug.*
