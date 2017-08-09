@@ -14,12 +14,11 @@ export const getEntityByKey = (state, key) => {
 
 const reducer = (state = {}, action) => {
   switch (action.type) {
-    case "loginUser_PENDING": {
-      return {...state};
+    case "LoginUser_PENDING": {
       break;
     }
-    case "loginUser_FULFILLED": {
-      let userResponse = action.payload["data"];
+    case "LoginUser_FULFILLED": {
+      let userResponse = action.payload;
      
       return {...state, userResponse};
       break;
